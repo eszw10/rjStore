@@ -7,13 +7,47 @@
     <title>Search bar</title>
 </head>
 <body>
-    <div class="navbar-content w-full bg-primary flex items-center py-4 px-7 md:px-32    md:justify-between gap-6  ">
-        <img src="../../../assets/images/logo.svg" alt="" class="logo h-6">
-        <div class="searchbar py-2 px-2 md:px-4 flex w-full md:w-[720px] gap-2 items-center bg-white rounded text-xs md:text-base">
-            <img src="/assets/icons/search-icon.png" alt="" class="search-icon hover:cursor-pointer h-4 ">
-            <input type="text" class="bar w-full outline-none" placeholder="cari game disini" maxlength="100"/>
+    <nav class="bg-primary px-7 md:px-32">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://bangrjstore.com/" class="flex items-center">
+            <img src="../../../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1" >
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden py-1 px-2 md:px-4 md:flex w-full md:w-[720px] gap-2 items-center bg-white rounded text-xs md:text-base">
+            <input type="text" class="block w-full text-sm outline-none border-none focus:outline-none focus:ring-0" placeholder="Cari Game..">
+            <button type="button" class="bg-blue-500 text-white px-3 rounded-md">Cari</button>
+          </div>
+          <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-search" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
         </div>
-    </div>
-    <div class="hero bg-red-500 h-1/2">
+          <div class="absolute right-0 top-[70px] items-center justify-between hidden w-full md:flex md:w-auto md:order-1 bg-[#252F45]" id="navbar-search">
+            <div class="relative mt-3 mx-4 md:hidden">
+              <input type="text" class="block w-full text-sm bg-white outline-none border-white rounded" placeholder="Cari Game...">
+            </div>
+            <ul class="flex flex-col p-4 md:hidden mt-4 font-medium text-white">
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded" aria-current="page">Beranda</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 round">top Up</a>
+              </li>
+              <li>
+                <a href="../../SyaratdanKetentuan.html" class="block py-2 pl-3 pr-4 rounded">Syarat dan Ketentuan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
+  <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>  
 </body>
 </html>

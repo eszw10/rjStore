@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     'index.html',
-    './src/**/*.html'
+    './src/**/*.html',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -11,10 +12,14 @@ module.exports = {
         'poppins':['Poppins', 'sans-serif']
       },
       colors: {
-        'primary' : '#1F4644'
+        'primary' : '#1F4644',
+        'secondary' : '#252F45',
+        'dark': '#111827'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
