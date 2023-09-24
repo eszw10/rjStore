@@ -13,3 +13,11 @@
 body {
     margin: 0;
 }
+
+/* tailwind custom bundle style */
+@layer components {
+    .nav-categories-item {
+      @apply cursor-pointer hover:text-green-500 hover:underline decoration-green-500 hover:underline-offset-8
+    };
+  
+  }
