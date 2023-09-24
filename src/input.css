@@ -19,5 +19,13 @@ body {
     .nav-categories-item {
       @apply cursor-pointer hover:text-green-500 hover:underline decoration-green-500 hover:underline-offset-8
     };
+
+    .card-diamond {
+        @apply flex flex-col gap-2 items-center justify-center bg-white py-4 px-14 w-60 rounded-lg hover:bg-green-100 focus:bg-green-100 focus:ring-green-500 focus:ring-4 focus:border-green-500 cursor-pointer
+      };
+
+
+
+    
   
   }

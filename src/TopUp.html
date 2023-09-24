@@ -3,9 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Top Up</title>
 </head>
 <body>
-    
+    <div class="container flex justify-between gap-4">
+        <!-- Navbar samping -->
+        <nav class="navbar-access hidden md:flex flex-col w-[100px] bg-secondary text-white h-full fixed">
+            <a href="../src/index.html" class="home flex flex-col gap-2 justify-center items-center cursor-pointer p-4 hover:text-[#3B82F6]">
+              <i class="fa-solid fa-house text-2xl"></i>
+              <p>Beranda</p>
+            </a>
+            <a href="../src/TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-[#3B82F6]">
+              <i class="fa-solid fa-credit-card text-2xl"></i>
+              <p>Top Up</p>
+            </a>
+            <a href="../src/SyaratdanKetentuan.html" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
+              <i class="fa-regular fa-circle-question text-2xl"></i>
+              <p>Syarat dan Ketentuan</p>
+            </a>
+        </nav>
+        <!-- Content -->
+        <div class="content w-full md:ml-[100px] bg-dark">
+            <!-- Navbar search -->
+            <nav class="bg-primary px-7 md:px-32">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://bangrjstore.com/" class="flex items-center">
+                    <img src="../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
+                </a>
+                <div class="flex md:order-2">
+                  <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1" >
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                    <span class="sr-only">Search</span>
+                  </button>
+                  <div class="relative hidden py-1 px-2 md:px-4 md:flex w-full md:w-[720px] gap-2 items-center bg-white rounded text-xs md:text-base">
+                    <input type="text" class="block w-full text-sm outline-none border-none focus:outline-none focus:ring-0" placeholder="Cari Game..">
+                    <button type="button" class="bg-blue-500 text-white px-3 rounded-md">Cari</button>
+                  </div>
+                  <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-search" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                      </svg>
+                  </button>
+                </div>
+                  <div class="z-50 absolute right-0 top-[70px] items-center justify-between hidden w-full md:flex md:w-auto md:order-1 bg-[#252F45]" id="navbar-search">
+                    <div class="relative mt-3 mx-4 md:hidden flex gap-4 bg-white outline-none border-white rounded ">
+                      <input type="text" class="block w-full text-sm bg-white outline-none border-white rounded-l" placeholder="Cari Game...">
+                      <button type="button" class="bg-blue-500 text-white px-3 rounded-r">Cari</button>
+                    </div>
+                    <div class="flex flex-col p-4 md:hidden mt-4 gap-8 font-medium text-white">
+                        <a href="../src/index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-[#3B82F6] rounded" aria-current="page">
+                          <i class="fa-solid fa-house text-2xl"></i>
+                          <p>Beranda</p>
+                        </a>
+                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-700">
+                          <i class="fa-solid fa-credit-card text-2xl"></i>
+                          <p>top Up</p>
+                        </a>
+                        <a href="../src/SyaratdanKetentuan.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
+                          <i class="fa-regular fa-circle-question text-2xl"></i>
+                          <p>Syarat dan Ketentuan</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!-- main content -->
+            <main class="relative md:pl-[105px] p-5 md:pr-24 font-inter flex flex-col gap-12 text-white">
+                <div class="hero-topUp mt-7 h-fit">
+                    <p class="breadcrumbs text-white font-semibold mb-8">
+                        <a href="./index.html" class="text-primary">Home</a>
+                        / Mobile Legends
+                    </p>
+                    <div class="game font-medium relative flex flex-col items-center justify-center gap-4 py-5 px-5 md:px-44 bg-[url('../assets/images/bg-topup.svg')] bg-cover">
+                        <div class="absolute h-full w-full bg-black/30"></div>
+                        <img src="../assets/images/ml-round.png" alt="" class="h-32 relative z-10">
+                        <p class="md:text-xl font-semibold relative z-10">Mobile Legends</p>
+                        <h1 class="text-lg md:text-4xl relative z-10">Top Up Mobile Legends</h1>
+                        <p class="relative z-10 text-sm md:text-base">Top Up Diamonds Mobile Legends ML Paling Murah, Cepat dan Aman. Beli Starlight Member, Twilight Pass, dapatkan skin favorit untuk semua hero kesukaanmu. Diskon dan promo setiap hari!</p>
+                        <p class="relative z-10">Kontak Cs</p>
+                        <button type="button" class="relative z-10 flex gap-3 items-center justify-center py-2 px-6 bg-green-500 rounded-lg">
+                            <img src="../assets/icons/whatsapp.svg" alt="">
+                            <p>Hotline</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="input-ID font-medium bg-secondary p-8 flex flex-col gap-5 rounded-lg">
+                    <div class="satu flex items-center gap-6">
+                        <img src="../assets/icons/Nomor1.svg" alt="">
+                        <p class="text-2xl">MASUKKAN ID PENGGUNA</p>
+                    </div>
+                    <div class="input flex flex-col md:flex-row gap-5">
+                        <div class="id-pengguna flex flex-col gap-3 md:w-[70%]">
+                            <p>ID Pengguna</p>
+                            <input type="text" placeholder="Masukkan ID Pengguna" class="text-gray-300 bg-gray-700 rounded-lg focus:ring-0 outline-none border-none p-3">
+                        </div>
+                        <div class="id-zona flex flex-col gap-3 md:w-[30%]">
+                            <p>ID Zona</p>
+                            <input type="text" placeholder="Masukkan Zona" class="text-gray-300 bg-gray-700 rounded-lg focus:ring-0 outline-none border-none p-3">
+                        </div>
+                    </div>
+                    <p class="text-justify md:text-start">Untuk menemukan ID Pengguna Anda, klik avatar Anda di pojok kiri atas layar dan buka tab Info Umum. ID Pengguna Anda akan ditampilkan di bawah Nama Panggilan Anda. Silakan masukkan ID Pengguna lengkap di sini, mis. 12345678 (1234).
+                    </p>
+                    <button class="px-14 py-4 bg-green-500 rounded-lg self-start">Learn More</button>
+                </div>
+                <div class="input-diamond font-medium bg-secondary p-8 flex flex-col gap-5 rounded-lg">
+                    <div class="satu flex items-center gap-6">
+                        <img src="../assets/icons/Nomor2.svg" alt="">
+                        <p class="text-2xl">PILIH DIAMOND</p>
+                    </div>
+                    <div class="diamond-container flex flex-col md:flex-row flex-wrap gap-y-5 gap-x-9 md:justify-start justify-center items-center">
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                        <button class="card-diamond">
+                            <img src="../assets/icons/diamond.svg" alt="" class="h-8">
+                            <p class="text-black">86 Diamond</p>
+                            <p class="bg-green-500 px-6 rounded-lg">Rp20.298</p>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tahap ke-3 -->
+                <div class="metode-pembayaran font-medium bg-secondary p-8 flex flex-col gap-5 rounded-lg">
+                    <div class="satu flex items-center gap-6">
+                        <img src="../assets/icons/Nomor3.svg" alt="">
+                        <p class="text-2xl">PILIH SALURAN PEMBAYARAN</p>
+                    </div>                    
+                    <div id="accordion-collapse" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                            <div class="e-wallet">
+                                <p class="mb-3">E-Wallet</p>
+                                <div class="e-wallet flex gap-2 h-12">
+                                    <img src="../assets/images/shoopePay.png" alt="">
+                                    <img src="../assets/images/ovo.svg" alt="">
+                                    <img src="../assets/images/dana.svg" alt="">
+                                    <img src="../assets/images/LinkAja.svg" alt="">
+                                    <img src="../assets/images/AstraPay.png" alt="">
+                                </div>
+                            </div>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                        </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                            <div class="e-wallet">
+                                <p class="mb-3">Transfer Bank</p>
+                                <div class="e-wallet flex gap-2 h-6">
+                                    <img src="../assets/images/mandiri.svg" alt="">
+                                    <img src="../assets/images/BRI.svg" alt="">
+                                    <img src="../assets/images/BNI.svg" alt="">
+                                    <img src="../assets/images/BCA.svg" alt="">
+                                    <img src="../assets/images/permataBank.svg" alt="">
+                                    <img src="../assets/images/sinarmas.svg" alt="">
+                                    <img src="../assets/images/cimbNiaga.svg" alt="">
+                                    <img src="../assets/images/Danamon.svg" alt="">
+                                    <img src="../assets/images/Jenius.svg" alt="">
+                                </div>
+                            </div>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                        </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                            <div class="e-wallet">
+                                <p class="mb-3">QRIS</p>
+                                <img src="../assets/images/Qris.png" alt="" class="h-12">
+                            </div>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                            <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                                <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                                <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-4">
+                            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                <div class="e-wallet">
+                                    <p class="mb-3">Merchant</p>
+                                    <img src="../assets/images/alfamart.svg" alt="" class="h-12">
+                                </div>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                </svg>
+                            </button>
+                            </h2>
+                            <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                    <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                                    <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- Tahap ke-4 -->
+                <div class="input-whatsapp font-medium bg-secondary p-8 flex flex-col gap-5 rounded-lg">
+                    <div class="satu flex items-center gap-6">
+                        <img src="../assets/icons/Nomor4.svg" alt="">
+                        <p class="text-2xl">MASUKKAN NOMOR WA</p>
+                    </div>
+                    <div class="id-pengguna flex flex-col gap-3">
+                        <p>Nomor Whatsapp</p>
+                        <input type="text" placeholder="+62..." class="text-gray-300 bg-gray-700 rounded-lg focus:ring-0 outline-none border-none p-3">
+                    </div>
+                    <div class="id-zona flex flex-col gap-3 ">
+                        <p>Email</p>
+                        <input type="email" placeholder="Masukkan Email" class="text-gray-300 bg-gray-700 rounded-lg focus:ring-0 outline-none border-none p-3">
+                    </div>
+                </div>
+                <div class="submit-payment flex justify-between gap-4">
+                    <button class="py-6 px-44 bg-green-500 rounded-lg w-[50%]">Pesan Sekarang</button>
+                    <button class="py-6 px-44 bg-gray-400 rounded-lg w-[50%]">Reset</button>
+                </div>
+                <!-- Description -->
+              <div class="description relative z-10 text-lg md:text-4xl font-semibold mt-6 md:mt-20 text-white">
+                <p>Top Up Game & Voucher Murah, Cepat, dan Terpercaya</p>
+                <p class="mt-4 md:mt-12 text-sm md:text-lg text-justify font-normal text-gray-400">Top Up game & voucher Game. Metode pembayaran lengkap, instant proses, terpercaya dan legal 100%. Buat para buyer dan seller dan sultan - sultan di luar sana pastikan belanja dan jualan top up game dan voucher mu di bangrjstore.com. Tersedia bermacam - macam jenis game populer seperti Mobile Legends, PUBG Mobile, Valorant, Free Fire, Ragnarok, Dragon Raja, Light Of Thel, dan berbagai game lainnya yang tidak kalah seru untuk dimainkan.</p>
+              </div>
+              <!-- Payment -->
+              <div class="payment md:mb-48 mb-16 text-lg md:text-4xl font-semibold mt-6 text-white md:mt-20 flex flex-col gap-4 md:gap-14">
+                <p>Saluran Pembayaran Lengkap</p>
+                <div class="relative flex overflow-x-hidden items-center">
+                  <div class="animate-marquee whitespace-nowrap flex gap-12">
+                    <img src="../assets/images/ovo.svg" alt="">
+                    <img src="../assets/images/dana.svg" alt="">
+                    <img src="../assets/images/mandiri.svg" alt="">
+                    <img src="../assets/images/BRI.svg" alt="">
+                    <img src="../assets/images/BNI.svg" alt="">
+                  </div>
+                  <div class="hidden absolute top-0 animate-marquee2 whitespace-nowrap md:flex gap-12">
+                    <img src="../assets/images/ovo.svg" alt="" class="mx-3">
+                    <img src="../assets/images/dana.svg" alt="">
+                    <img src="../assets/images/mandiri.svg" alt="">
+                    <img src="../assets/images/BRI.svg" alt="">
+                    <img src="../assets/images/BNI.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- notification -->
+              <div class="hidden text-black absolute bottom-9 notification md:flex gap-4 bg-white p-2 rounded-lg items-center">
+                <img src="../assets/images/ML.png" alt="" class="h-28">
+                <div class="customer font-medium flex flex-col gap-2">
+                  <p class="font-semibold">Safir Huda</p>
+                  <p>Membeli <span class="text-blue-600">100</span> Koin Mobile Legends</p>
+                  <p>Baru Saja</p>
+                </div>
+              </div>
+              <!-- Customer Service -->
+              <img src="../assets/images/cs_whatsapp 1.svg" alt="" class="hidden absolute bottom-9 right-3 md:block cursor-pointer">
+            </main>
+            <!-- footer -->
+            <footer class="font-inter md:font-poppins text-sm md:text-base footer bg-primary  flex flex-col text-white p-7 md:px-28  gap-16 md:gap-32  ">
+                <section class="atas flex flex-col md:flex-row gap-6 md:justify-between ">
+                    <section class="bagian-kiri">
+                        <img src="../assets/images/logo.svg" alt="" class="logo h-8">
+                        <h2 class="mb-7">PT.GAMERS INDONESIA</h2>
+                        <p class="w-[90%] md:w-[40%] ">Platform yang menghubungkan antara pembeli dan penjual guna memudahkan transaksi digital yang nyaman dan aman.</p>
+                    </section>
+                    <section class="bagian-kanan">
+                        <p class="mb-4 font-semibold">Butuh Bantuan?</p>
+                        <img src="../assets/images/hubungikami.jpg" alt="" class="h-6 md:h-12">
+                    </section>
+                </section>
+                <section class="bawah text-xs md:text-base flex flex-col-reverse md:flex-row  justify-center md:justify-between items-center text-[#8896AB] gap-3">
+                    <p>© 2023 Bang RJ STORE. All rights reserved.</p>
+                    <div class="sosial-media flex h-5 md:h-6 md:gap-4  gap-1 ">
+                        <img src="../assets/icons/Facebook.svg" alt="" class="facebook">
+                        <img src="../assets/icons/Twitter.svg" alt="" class="twitter">
+                        <img src="../assets/icons/Instagram.svg" alt="" class="instagram">
+                        <img src="../assets/icons/LinkedIn.svg" alt="" class="LinkedIn">
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </div>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
