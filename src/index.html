@@ -20,7 +20,7 @@
             <i class="fa-solid fa-credit-card text-2xl"></i>
             <p>Top Up</p>
           </a>
-          <a href="../src/SyaratdanKetentuan.html" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
+          <a href="#" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
             <i class="fa-regular fa-circle-question text-2xl"></i>
             <p>Syarat dan Ketentuan</p>
           </a>
@@ -30,7 +30,7 @@
             <!-- Navbar search -->
             <nav class="bg-primary px-7 md:px-32">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://bangrjstore.com/" class="flex items-center">
+                <a href="#" class="flex items-center">
                     <img src="../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
                 </a>
                 <div class="flex md:order-2">
@@ -65,7 +65,7 @@
                           <i class="fa-solid fa-credit-card text-2xl"></i>
                           <p>top Up</p>
                         </a>
-                        <a href="../src/SyaratdanKetentuan.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
+                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
                           <i class="fa-regular fa-circle-question text-2xl"></i>
                           <p>Syarat dan Ketentuan</p>
                         </a>
@@ -77,7 +77,7 @@
             <div class="hero relative h-[40vh] md:h-[90vh] flex justify-center items-center">
                 <img src="../assets/images/bg-beranda.png" alt="" class="absolute w-full h-full">
                 <!-- Carousel -->
-                <div id="default-carousel" class="relative w-full h-[40vh] md:h-[70vh]" data-carousel="slide">
+                <div id="default-carousel" class="relative w-full md:h-[70vh]" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <!-- Slider indicators -->
-                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-0 md:bottom-5 left-1/2">
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
@@ -123,29 +123,13 @@
               <img src="../assets/images/bg-spiral-2.svg" alt="" class="absolute bottom-[270px] left-0">
               <section class="voucher md:mt-24 mt-7 md:ml-[105px]">
                   <div class="pembuka flex gap-8 items-center text-white">
-                      <h3 class="font-semibold text-lg md:text-4xl">Dapatkan Voucher Tambahan</h3>
-                      <p class="bg-red-500 px-3 py-2 rounded-lg">08: 34: 12</p>
+                      <h3 class="font-semibold md:text-4xl">Dapatkan Voucher Tambahan</h3>
+                      <p class="bg-red-500 px-3 md:px-6 py-2 rounded-lg">08: 34: 12</p>
                   </div>
               </section>
               <!-- Carousel -->
-              <div id="controls-carousel" class="relative w-full md:w-[90%] mt-4 md:ml-[105px]" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/images/voucher-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="../assets/images/voucher-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../assets/images/voucher-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <div class="relative flex items-center justify-center mt-4 md:mt-11 md:ml-[105px]">
+                <button type="button" id="prev" aria-label="slide-backward" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                     <span class="inline-flex items-center justify-center w-10 h-32 rounded-lg bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
@@ -153,7 +137,23 @@
                         <span class="sr-only">Previous</span>
                     </span>
                 </button>
-                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                    <div id="slider" class="flex gap-4 md:gap-6 items-center justify-start transition ease-out duration-700">
+                        <div class="flex-shrink-0 relative w-full sm:w-auto">
+                            <img src="../assets/images/voucher-1.png" alt="sitting area" class=" w-full h-48" />
+                        </div>
+                        <div class="flex-shrink-0 relative w-full sm:w-auto h-48">
+                            <img src="../assets/images/voucher-2.png" alt="sitting area" class="h-48 w-full" />
+                        </div>
+                        <div class="flex-shrink-0 relative w-full sm:w-auto h-48">
+                            <img src="../assets/images/voucher-3.png" alt="sitting area" class="h-48 w-full" />
+                        </div>
+                        <div class="flex-shrink-0 relative w-full sm:w-auto h-48">
+                          <img src="../assets/images/bg-topup.svg" alt="sitting area" class="h-48 w-full" />
+                      </div>
+                    </div>
+                </div>
+                <button type="button" aria-label="slide-forward" id="next" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
                     <span class="inline-flex items-center justify-center w-10 h-32 rounded-lg bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
@@ -201,72 +201,77 @@
                 </div>
               </section>
               <!-- Game-categories -->
-              <div class="relative z-10 game-categories text-white text-lg mt-9 md:ml-14 flex flex-col gap-6 md:gap-12">
-                <div class="nav-categories flex md:justify-center md:items-center justify-between md:gap-16 md:mt-20">
+              <div class="relative z-10 game-categories text-white md:text-xl mt-9 md:ml-14 flex flex-col gap-6 md:gap-12">
+                <div class="nav-categories flex md:justify-center md:items-center justify-between md:gap-16 md:mt-20 dur">
                   <p class="nav-categories-item">Game PC</p>
                   <p class="nav-categories-item">Game Mobile</p>
                   <p class="nav-categories-item">Live App</p>
                   <p class="nav-categories-item">Voucher Game</p>
                 </div>
-                <div class="card-categories-container overflow-hidden md:mt-16 text-sm md:text-lg grid gap-6 grid-cols-2 md:items-center md:justify-center md:grid-cols-4 md:gap-x-6 md:gap-y-12">
+                <div class="card-categories-container text-center overflow-hidden md:mt-16 text-sm md:text-lg grid gap-6 grid-cols-2 md:items-center md:justify-center md:grid-cols-4 md:gap-x-6 md:gap-y-12">
                   <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                    <img src="../assets/images/aceRace.png" alt="" class="h-32">
+                    <p>Ace Racer</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
                   <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                    <img src="../assets/images/apex.png" alt="" class="h-32">
+                    <p>apex Legends Mobile</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                  <div class="relative card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                    <div class="coming-soon absolute py-1 px-2 bg-pink-500 rounded-xl text-sm top-4 right-4">Coming Soon</div>
+                    <img src="../assets/images/Arena Breakout.png" alt="" class="h-32">
+                    <p>Arena Breakout</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                  <div class="relative card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                    <div class="maintenance absolute py-1 px-2 bg-orange-500 rounded-xl text-sm top-4 right-4">Maintenance</div>
+                    <img src="../assets/images/Arena Breakout.png" alt="" class="h-32">
+                    <p>Arena Breakout </p>
+                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                  </div>
+                  <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                    <img src="../assets/images/Atlantica.png" alt="" class="h-32">
+                    <p>Atlantica Rebirth</p>
+                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                  </div>
+                  <div class="relative card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                    <div class="coming-soon absolute py-1 px-2 bg-pink-500 rounded-xl text-sm top-4 right-4">Coming Soon</div>
+                    <img src="../assets/images/Bigo.png" alt="" class="h-32">
+                    <p>Bigo Live</p>
+                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                  </div>
+                  <div class="relative card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                    <div class="maintenance absolute py-1 px-2 bg-orange-500 rounded-xl text-sm top-4 right-4">Maintenance</div>
+                    <img src="../assets/images/Bleach.png" alt="" class="h-32">
+                    <p>Bleach Mobile 3D</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
                   <div class="card hidden md:h-[300px] w-1/2 h-1/2 md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                    <img src="../assets/images/Bleach.png" alt="" class="h-32">
+                    <p>Bleach Mobile 3D</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
                   <div class="card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                    <img src="../assets/images/Brawl.png" alt="" class="h-32">
+                    <p>Brawl Stars</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                  <div class="relative card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                    <div class="maintenance absolute py-1 px-2 bg-orange-500 rounded-xl text-sm top-4 right-4">Maintenance</div>
+                    <img src="../assets/images/Chimerland.png" alt="" class="h-32">
+                    <p>Chimerland</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
                   <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-32">
-                    <p>Mobile Legends</p>
+                    <img src="../assets/images/COC.png" alt="" class="h-32">
+                    <p>Clash of Clans</p>
+                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                  </div>
+                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                    <img src="../assets/images/COC.png" alt="" class="h-32">
+                    <p>Clash of Clans</p>
                     <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
                 </div>
@@ -279,10 +284,12 @@
               <!-- Payment -->
               <div class="payment md:mb-48 mb-16 md:ml-[105px] text-lg md:text-4xl font-semibold mt-6 text-white md:mt-20 flex flex-col gap-4 md:gap-14">
                 <p>Saluran Pembayaran Lengkap</p>
+                <!-- Marquee Animation -->
                 <div class="relative flex overflow-x-hidden items-center">
                   <div class="animate-marquee whitespace-nowrap flex gap-12">
                     <img src="../assets/images/ovo.svg" alt="">
                     <img src="../assets/images/dana.svg" alt="">
+                    <img src="../assets/images/gopay.svg" alt="">
                     <img src="../assets/images/mandiri.svg" alt="">
                     <img src="../assets/images/BRI.svg" alt="">
                     <img src="../assets/images/BNI.svg" alt="">
@@ -290,6 +297,7 @@
                   <div class="hidden absolute top-0 animate-marquee2 whitespace-nowrap md:flex gap-12">
                     <img src="../assets/images/ovo.svg" alt="" class="mx-3">
                     <img src="../assets/images/dana.svg" alt="">
+                    <img src="../assets/images/gopay.svg" alt="">
                     <img src="../assets/images/mandiri.svg" alt="">
                     <img src="../assets/images/BRI.svg" alt="">
                     <img src="../assets/images/BNI.svg" alt="">
@@ -334,5 +342,6 @@
         </div>
     </div>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
