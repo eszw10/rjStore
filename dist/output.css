@@ -1296,6 +1296,10 @@ input:checked + .toggle-bg{
   margin-top: 2.25rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .block{
   display: block;
 }
@@ -1417,8 +1421,16 @@ input:checked + .toggle-bg{
   width: 0.75rem;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .w-4{
   width: 1rem;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .w-5{
@@ -1557,6 +1569,18 @@ input:checked + .toggle-bg{
   resize: both;
 }
 
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-decimal{
+  list-style-type: decimal;
+}
+
+.list-disc{
+  list-style-type: disc;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1621,12 +1645,20 @@ input:checked + .toggle-bg{
   gap: 3rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
 .gap-16{
   gap: 4rem;
 }
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-3{
@@ -1645,8 +1677,16 @@ input:checked + .toggle-bg{
   gap: 1.5rem;
 }
 
+.gap-7{
+  gap: 1.75rem;
+}
+
 .gap-8{
   gap: 2rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-x-9{
@@ -1672,6 +1712,10 @@ input:checked + .toggle-bg{
 
 .self-start{
   align-self: flex-start;
+}
+
+.self-center{
+  align-self: center;
 }
 
 .self-stretch{
@@ -1770,14 +1814,14 @@ input:checked + .toggle-bg{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-orange-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 90 31 / var(--tw-border-opacity));
+}
+
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.bg-\[\#111827\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#252F45\]{
@@ -1844,6 +1888,11 @@ input:checked + .toggle-bg{
   background-color: rgb(14 159 110 / var(--tw-bg-opacity));
 }
 
+.bg-orange-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 248 241 / var(--tw-bg-opacity));
+}
+
 .bg-orange-500{
   --tw-bg-opacity: 1;
   background-color: rgb(255 90 31 / var(--tw-bg-opacity));
@@ -1859,14 +1908,14 @@ input:checked + .toggle-bg{
   background-color: rgb(31 70 68 / var(--tw-bg-opacity));
 }
 
+.bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 232 232 / var(--tw-bg-opacity));
+}
+
 .bg-red-500{
   --tw-bg-opacity: 1;
   background-color: rgb(240 82 82 / var(--tw-bg-opacity));
-}
-
-.bg-red-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 36 36 / var(--tw-bg-opacity));
 }
 
 .bg-secondary{
@@ -1974,11 +2023,6 @@ input:checked + .toggle-bg{
   padding-right: 1.75rem;
 }
 
-.px-9{
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-}
-
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2014,6 +2058,11 @@ input:checked + .toggle-bg{
   padding-bottom: 1.5rem;
 }
 
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -2042,10 +2091,6 @@ input:checked + .toggle-bg{
   font-family: Inter, sans-serif;
 }
 
-.font-poppins{
-  font-family: Poppins, sans-serif;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2069,6 +2114,11 @@ input:checked + .toggle-bg{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-medium{
@@ -2144,6 +2194,11 @@ input:checked + .toggle-bg{
 .text-green-700{
   --tw-text-opacity: 1;
   color: rgb(4 108 78 / var(--tw-text-opacity));
+}
+
+.text-orange-500{
+  --tw-text-opacity: 1;
+  color: rgb(255 90 31 / var(--tw-text-opacity));
 }
 
 .text-primary{
@@ -2240,10 +2295,6 @@ body {
 .checked\:bg-green-500:checked{
   --tw-bg-opacity: 1;
   background-color: rgb(14 159 110 / var(--tw-bg-opacity));
-}
-
-.hover\:cursor-pointer:hover{
-  cursor: pointer;
 }
 
 .hover\:border-gray-300:hover{
@@ -2557,6 +2608,10 @@ body {
     height: 300px;
   }
 
+  .md\:h-\[50\%\]{
+    height: 50%;
+  }
+
   .md\:h-\[70vh\]{
     height: 70vh;
   }
@@ -2641,6 +2696,10 @@ body {
     gap: 4rem;
   }
 
+  .md\:gap-20{
+    gap: 5rem;
+  }
+
   .md\:gap-32{
     gap: 8rem;
   }
@@ -2687,6 +2746,11 @@ body {
     padding-right: 1.5rem;
   }
 
+  .md\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .md\:pl-\[105px\]{
     padding-left: 105px;
   }
@@ -2726,5 +2790,9 @@ body {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:font-medium{
+    font-weight: 500;
   }
 }

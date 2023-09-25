@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex justify-between gap-4">
+        <!-- Navbar samping -->
+        <nav class="navbar-access hidden md:flex flex-col w-[100px] bg-secondary text-white h-full fixed">
+            <a href="../src/index.html" class="home flex flex-col gap-2 justify-center items-center cursor-pointer p-4 hover:text-[#3B82F6]">
+              <i class="fa-solid fa-house text-2xl"></i>
+              <p>Beranda</p>
+            </a>
+            <a href="#" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-[#3B82F6]">
+              <i class="fa-solid fa-credit-card text-2xl"></i>
+              <p>Top Up</p>
+            </a>
+            <a href="#" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
+              <i class="fa-regular fa-circle-question text-2xl"></i>
+              <p>Syarat dan Ketentuan</p>
+            </a>
+        </nav>
+        <!-- Content -->
+        <div class="content w-full md:ml-[100px] bg-dark">
+            <!-- Navbar search -->
+            <nav class="bg-primary px-7 md:px-32">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://bangrjstore.com/" class="flex items-center">
+                    <img src="../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
+                </a>
+                <div class="flex md:order-2">
+                  <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1" >
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                    <span class="sr-only">Search</span>
+                  </button>
+                  <div class="relative hidden py-1 px-2 md:px-4 md:flex w-full md:w-[720px] gap-2 items-center bg-white rounded text-xs md:text-base">
+                    <input type="text" class="block w-full text-sm outline-none border-none focus:outline-none focus:ring-0" placeholder="Cari Game..">
+                    <button type="button" class="bg-blue-500 text-white px-3 rounded-md">Cari</button>
+                  </div>
+                  <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-search" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                      </svg>
+                  </button>
+                </div>
+                  <div class="z-50 absolute right-0 top-[70px] items-center justify-between hidden w-full md:flex md:w-auto md:order-1 bg-[#252F45]" id="navbar-search">
+                    <div class="relative mt-3 mx-4 md:hidden flex gap-4 bg-white outline-none border-white rounded ">
+                      <input type="text" class="block w-full text-sm bg-white outline-none border-white rounded-l" placeholder="Cari Game...">
+                      <button type="button" class="bg-blue-500 text-white px-3 rounded-r">Cari</button>
+                    </div>
+                    <div class="flex flex-col p-4 md:hidden mt-4 gap-8 font-medium text-white">
+                        <a href="../src/index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-[#3B82F6] rounded" aria-current="page">
+                          <i class="fa-solid fa-house text-2xl"></i>
+                          <p>Beranda</p>
+                        </a>
+                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-700">
+                          <i class="fa-solid fa-credit-card text-2xl"></i>
+                          <p>top Up</p>
+                        </a>
+                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
+                          <i class="fa-regular fa-circle-question text-2xl"></i>
+                          <p>Syarat dan Ketentuan</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!-- main content -->
+            <main class="relative md:pl-[105px] p-5 md:pr-24 font-inter flex flex-col gap-12 text-white">
+                <h1 class="text-4xl self-center font-semibold mt-16">Syarat dan Ketentuan</h1>
+                <!-- Syarat-->
+                <div class="terms text-justify flex flex-col gap-12">
+                    <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
+                        <div class="title flex gap-6 items-center">
+                            <img src="../assets/icons/Nomor1.svg" alt="" class="h-12">
+                            <p class="text-2xl">Umum</p>
+                        </div>
+                        <ul class="flex flex-col gap-2 list-disc list-inside">
+                            <li>Dengan mendaftar dan menggunakan layanan Bangrjstore.com, Anda secara otomatis menyetujui semua ketentuan layanan kami</li>
+                            <li>Syarat dan Ketentuan Umum dapat Kami ubah, modifikasi, tambah, hapus atau koreksi (“perubahan”) setiap saat sesuai dengan pengembangan Bangrjstore.com dan peraturan perundang-undangan. Anda Kami anjurkan untuk mengunjungi Website Kami secara berkala agar dapat mengetahui adanya perubahan tersebut.</li>
+                        </ul>
+                    </div>
+                    <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
+                        <div class="title flex gap-6 items-center">
+                            <img src="../assets/icons/Nomor2.svg" alt="" class="h-12">
+                            <p class="text-2xl">Umum</p>
+                        </div>
+                        <ul class="flex flex-col gap-2 list-disc list-inside">
+                            <li>Bangrjstore.com menyediakan sistem dan platform fasilitas pemesanan online secara terpadu ("Layanan"), yang dapat melayani pemesanan In Game Credits.</li>
+                            <li>Bangrjstore.com tidak bertanggung jawab jika Anda mengalami kerugian dalam bisnis Anda sebagai reseller seperti kesalahan penginputan pesanan, penipuan atau kesalahan penjumlahan atau data lainnya.</li>
+                            <li>Bangrjstore.com tidak menerima permintaan pembatalan / pengembalian dana setelah pesanan masuk ke sistem kami. Kami memberikan pengembalian dana jika pesanan tidak dapat diselesaikan sesuai dengan ketentuan yang berlaku.</li>
+                        </ul>
+                    </div>
+                    <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
+                        <div class="title flex gap-6 items-center">
+                            <img src="../assets/icons/Nomor3.svg" alt="" class="h-12">
+                            <p class="text-2xl">Akun</p>
+                        </div>
+                        <ul class="flex flex-col gap-2 list-disc list-inside">
+                            <li>
+                                Bangrjstore.com berhak menghentikan atau menghapus akun anda tanpa pemberian refund dari pihak kami apabila melakukan hal dibawah ini:
+                                <ul class="list-disc list-inside">
+                                    <li>Memperjual Belikan akun Bangrjstore.com</li>
+                                    <li>Melakukan penipuan atau kecurangan dalam bertransaksi di Bangrjstore.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
+                        <div class="title flex gap-6 items-center">
+                            <img src="../assets/icons/Nomor4.svg" alt="" class="h-12">
+                            <p class="text-2xl">Transaksi</p>
+                        </div>
+                        <ul class="flex flex-col gap-2 list-disc list-inside">
+                            <li>pabila terdapat pengguna melakukan transaksi secara tidak resmi / kecurangan :</li>
+                            <li>Bangrjstore.com berhak membawa kejalur hukum.</li>
+                            <li>Pengguna wajib mempertanggungjawabkan kesalahannya.</li>
+                        </ul>
+                    </div>
+                    <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
+                        <div class="title flex gap-6 items-center">
+                            <img src="../assets/icons/Nomor5.svg" alt="" class="h-12">
+                            <p class="text-2xl">Disclaimer / Dispute</p>
+                        </div>
+                        <ul class="flex flex-col gap-2 list-disc list-inside">
+                            <li>Apabila terdapat dispute dari pihak ketiga pemberi jasa:</li>
+                            <li>Bangrjstore.com akan membantu untuk membuat laporan dan follow up ke pihak ketiga.</li>
+                            <li>Bangrjstore.com tidak bertanggung jawab jika kesalahan yang terjadi dilakukan pihak ketiga.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Description -->
+              <div class="description relative z-10 text-lg md:text-4xl font-semibold mt-6 md:mt-20 text-white">
+                <p>Top Up Game & Voucher Murah, Cepat, dan Terpercaya</p>
+                <p class="mt-4 md:mt-12 text-sm md:text-lg text-justify font-normal text-gray-400">Top Up game & voucher Game. Metode pembayaran lengkap, instant proses, terpercaya dan legal 100%. Buat para buyer dan seller dan sultan - sultan di luar sana pastikan belanja dan jualan top up game dan voucher mu di bangrjstore.com. Tersedia bermacam - macam jenis game populer seperti Mobile Legends, PUBG Mobile, Valorant, Free Fire, Ragnarok, Dragon Raja, Light Of Thel, dan berbagai game lainnya yang tidak kalah seru untuk dimainkan.</p>
+              </div>
+              <!-- Payment -->
+              <div class="payment md:mb-48 mb-16 text-lg md:text-4xl font-semibold mt-6 text-white md:mt-20 flex flex-col gap-4 md:gap-14">
+                <p>Saluran Pembayaran Lengkap</p>
+                <div class="relative flex overflow-x-hidden items-center">
+                  <div class="animate-marquee whitespace-nowrap flex gap-12">
+                    <img src="../assets/images/ovo.svg" alt="">
+                    <img src="../assets/images/dana.svg" alt="">
+                    <img src="../assets/images/mandiri.svg" alt="">
+                    <img src="../assets/images/BRI.svg" alt="">
+                    <img src="../assets/images/BNI.svg" alt="">
+                  </div>
+                  <div class="hidden absolute top-0 animate-marquee2 whitespace-nowrap md:flex gap-12">
+                    <img src="../assets/images/ovo.svg" alt="" class="mx-3">
+                    <img src="../assets/images/dana.svg" alt="">
+                    <img src="../assets/images/mandiri.svg" alt="">
+                    <img src="../assets/images/BRI.svg" alt="">
+                    <img src="../assets/images/BNI.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- notification -->
+              <div class="hidden text-black absolute bottom-9 notification md:flex gap-4 bg-white p-2 rounded-lg items-center">
+                <img src="../assets/images/ML.png" alt="" class="h-28">
+                <div class="customer font-medium flex flex-col gap-2">
+                  <p class="font-semibold">Safir Huda</p>
+                  <p>Membeli <span class="text-blue-600">100</span> Koin Mobile Legends</p>
+                  <p>Baru Saja</p>
+                </div>
+              </div>
+              <!-- Customer Service -->
+              <img src="../assets/images/cs_whatsapp 1.svg" alt="" class="hidden absolute bottom-9 right-3 md:block cursor-pointer">
+            </main>
+            <!-- footer -->
+            <footer class="font-inter md:font-poppins text-sm md:text-base footer bg-primary  flex flex-col text-white p-7 md:px-28  gap-16 md:gap-32  ">
+                <section class="atas flex flex-col md:flex-row gap-6 md:justify-between ">
+                    <section class="bagian-kiri">
+                        <img src="../assets/images/logo.svg" alt="" class="logo h-8">
+                        <h2 class="mb-7">PT.GAMERS INDONESIA</h2>
+                        <p class="w-[90%] md:w-[40%] ">Platform yang menghubungkan antara pembeli dan penjual guna memudahkan transaksi digital yang nyaman dan aman.</p>
+                    </section>
+                    <section class="bagian-kanan">
+                        <p class="mb-4 font-semibold">Butuh Bantuan?</p>
+                        <img src="../assets/images/hubungikami.jpg" alt="" class="h-6 md:h-12">
+                    </section>
+                </section>
+                <section class="bawah text-xs md:text-base flex flex-col-reverse md:flex-row  justify-center md:justify-between items-center text-[#8896AB] gap-3">
+                    <p>© 2023 Bang RJ STORE. All rights reserved.</p>
+                    <div class="sosial-media flex h-5 md:h-6 md:gap-4  gap-1 ">
+                        <img src="../assets/icons/Facebook.svg" alt="" class="facebook">
+                        <img src="../assets/icons/Twitter.svg" alt="" class="twitter">
+                        <img src="../assets/icons/Instagram.svg" alt="" class="instagram">
+                        <img src="../assets/icons/LinkedIn.svg" alt="" class="LinkedIn">
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </div>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
