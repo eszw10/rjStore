@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
     <link href="../dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Syarat & Ketentuan</title>
 </head>
 <body>
     <div class="flex justify-between gap-4">
         <!-- Navbar samping -->
         <nav class="navbar-access hidden md:flex flex-col w-[100px] bg-secondary text-white h-full fixed">
-            <a href="../src/index.html" class="home flex flex-col gap-2 justify-center items-center cursor-pointer p-4 hover:text-[#3B82F6]">
+            <a href="./index.html" class="home flex flex-col gap-2 justify-center items-center cursor-pointer p-4 hover:text-[#3B82F6]">
               <i class="fa-solid fa-house text-2xl"></i>
               <p>Beranda</p>
             </a>
-            <a href="#" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-[#3B82F6]">
+            <a href="./TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer hover:text-[#3B82F6]">
               <i class="fa-solid fa-credit-card text-2xl"></i>
               <p>Top Up</p>
             </a>
-            <a href="#" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
+            <a href="./SyaratdanKetentuan.html" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer bg-[#3B82F6]">
               <i class="fa-regular fa-circle-question text-2xl"></i>
               <p>Syarat dan Ketentuan</p>
             </a>
@@ -56,15 +56,15 @@
                       <button type="button" class="bg-blue-500 text-white px-3 rounded-r">Cari</button>
                     </div>
                     <div class="flex flex-col p-4 md:hidden mt-4 gap-8 font-medium text-white">
-                        <a href="../src/index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-[#3B82F6] rounded" aria-current="page">
+                        <a href="./index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-[#3B82F6] rounded" aria-current="page">
                           <i class="fa-solid fa-house text-2xl"></i>
                           <p>Beranda</p>
                         </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-700">
+                        <a href="./TopUp.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
                           <i class="fa-solid fa-credit-card text-2xl"></i>
                           <p>top Up</p>
                         </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
+                        <a href="./SyaratdanKetentuan.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-700 ">
                           <i class="fa-regular fa-circle-question text-2xl"></i>
                           <p>Syarat dan Ketentuan</p>
                         </a>
@@ -74,9 +74,9 @@
             </nav>
             <!-- main content -->
             <main class="relative md:pl-[105px] p-5 md:pr-24 font-inter flex flex-col gap-12 text-white">
-                <h1 class="text-4xl self-center font-semibold mt-16">Syarat dan Ketentuan</h1>
+                <h1 class="md:text-4xl text-3xl self-center font-semibold mt-16 text-center">Syarat dan Ketentuan</h1>
                 <!-- Syarat-->
-                <div class="terms text-justify flex flex-col gap-12">
+                <div class="terms md:text-justify flex flex-col gap-12">
                     <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
                         <div class="title flex gap-6 items-center">
                             <img src="../assets/icons/Nomor1.svg" alt="" class="h-12">
@@ -106,10 +106,8 @@
                         <ul class="flex flex-col gap-2 list-disc list-inside">
                             <li>
                                 Bangrjstore.com berhak menghentikan atau menghapus akun anda tanpa pemberian refund dari pihak kami apabila melakukan hal dibawah ini:
-                                <ul class="list-disc list-inside">
-                                    <li>Memperjual Belikan akun Bangrjstore.com</li>
-                                    <li>Melakukan penipuan atau kecurangan dalam bertransaksi di Bangrjstore.com</li>
-                                </ul>
+                                <li class="pl-5">Memperjual Belikan akun Bangrjstore.com</li>
+                                <li class="pl-5">Melakukan penipuan atau kecurangan dalam bertransaksi di Bangrjstore.com</li>
                             </li>
                         </ul>
                     </div>
@@ -120,8 +118,8 @@
                         </div>
                         <ul class="flex flex-col gap-2 list-disc list-inside">
                             <li>pabila terdapat pengguna melakukan transaksi secara tidak resmi / kecurangan :</li>
-                            <li>Bangrjstore.com berhak membawa kejalur hukum.</li>
-                            <li>Pengguna wajib mempertanggungjawabkan kesalahannya.</li>
+                            <li class="pl-5">Bangrjstore.com berhak membawa kejalur hukum.</li>
+                            <li class="pl-5">Pengguna wajib mempertanggungjawabkan kesalahannya.</li>
                         </ul>
                     </div>
                     <div class="terms-item bg-secondary p-8 flex flex-col gap-6 rounded-lg">
@@ -131,8 +129,8 @@
                         </div>
                         <ul class="flex flex-col gap-2 list-disc list-inside">
                             <li>Apabila terdapat dispute dari pihak ketiga pemberi jasa:</li>
-                            <li>Bangrjstore.com akan membantu untuk membuat laporan dan follow up ke pihak ketiga.</li>
-                            <li>Bangrjstore.com tidak bertanggung jawab jika kesalahan yang terjadi dilakukan pihak ketiga.</li>
+                            <li class="pl-5">Bangrjstore.com akan membantu untuk membuat laporan dan follow up ke pihak ketiga.</li>
+                            <li class="pl-5">Bangrjstore.com tidak bertanggung jawab jika kesalahan yang terjadi dilakukan pihak ketiga.</li>
                         </ul>
                     </div>
                 </div>

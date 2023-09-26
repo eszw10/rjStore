@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
     <link href="../dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Payment info</title>
 </head>
 <body>
     <div class="flex justify-between gap-4">
         <!-- Navbar samping -->
         <nav class="navbar-access hidden md:flex flex-col w-[100px] bg-secondary text-white h-full fixed">
-            <a href="../src/index.html" class="home flex flex-col gap-2 justify-center items-center cursor-pointer p-4 hover:text-[#3B82F6]">
+            <a href="./index.html" class="home flex flex-col gap-2 justify-center items-center cursor-pointer p-4 hover:text-[#3B82F6]">
               <i class="fa-solid fa-house text-2xl"></i>
               <p>Beranda</p>
             </a>
-            <a href="#" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-[#3B82F6]">
+            <a href="./TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-[#3B82F6]">
               <i class="fa-solid fa-credit-card text-2xl"></i>
               <p>Top Up</p>
             </a>
-            <a href="#" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
+            <a href="./SyaratdanKetentuan.html" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-[#3B82F6]">
               <i class="fa-regular fa-circle-question text-2xl"></i>
               <p>Syarat dan Ketentuan</p>
             </a>
@@ -56,15 +56,15 @@
                       <button type="button" class="bg-blue-500 text-white px-3 rounded-r">Cari</button>
                     </div>
                     <div class="flex flex-col p-4 md:hidden mt-4 gap-8 font-medium text-white">
-                        <a href="../src/index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-[#3B82F6] rounded" aria-current="page">
+                        <a href="./index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-[#3B82F6] rounded" aria-current="page">
                           <i class="fa-solid fa-house text-2xl"></i>
                           <p>Beranda</p>
                         </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-700">
+                        <a href="./TopUp.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-700">
                           <i class="fa-solid fa-credit-card text-2xl"></i>
                           <p>top Up</p>
                         </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
+                        <a href="./SyaratdanKetentuan.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-[#3B82F6]">
                           <i class="fa-regular fa-circle-question text-2xl"></i>
                           <p>Syarat dan Ketentuan</p>
                         </a>
@@ -88,12 +88,12 @@
                                     <p class="text-gray-700">Kamu bisa buat transaksi baru</p>
                                 </div>
                             </div>
-                            <div class="flex gap-8 md:gap-20">
-                                <p class="w-32">No Transaksi</p>         
+                            <div class="flex gap-3 md:gap-20 text-sm md:text-base">
+                                <p class="w-28 md:w-32">No Transaksi</p>         
                                 <p>:  #P3787824862486  <span class="text-green-500 cursor-pointer">Salin</span></p>
                             </div>
-                            <div class="flex gap-8 md:gap-20">
-                                <p class="w-32">Waktu Transaksi</p>         
+                            <div class="flex gap-3 md:gap-20 text-sm md:text-base">
+                                <p class="w-28 md:w-32">Waktu Transaksi</p>         
                                 <p>: 21 september 2023 - 19.21</p>
                             </div>
                         </div>
@@ -122,14 +122,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-produk bg-secondary rounded-lg p-6 flex flex-col gap-6 font-semibold md:font-medium text-sm md:text-base">
+                        <div class="detail-pembayaran relative bg-secondary rounded-lg p-6 flex flex-col gap-6 font-semibold md:font-medium text-sm md:text-base">
                             <h1 class="text-2xl font-semibold ">Detail Pembayaran</h1>
                             <div class="flex flex-col gap-3">
                                 <div class="flex md:gap-20">
                                     <p class="w-40">Status Pembayaran</p>         
                                     <div class="metode flex gap-3 items-center justify-center">
                                         <p>: Mobile Legends</p>
-                                        <div class="px-2 text-xs md:text-base bg-orange-50 text-orange-500 border border-orange-500 rounded-xl text-center">Belum Dibayar</div>
+                                        <div class="px-2 text-xs md:text-base bg-orange-50 text-orange-500 border border-orange-500 rounded-xl text-center absolute top-8 right-5 md:static">Belum Dibayar</div>
                                     </div>
                                 </div>
                                 <div class="flex md:gap-20">
