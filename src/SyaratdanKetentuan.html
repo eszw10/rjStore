@@ -11,15 +11,15 @@
     <div class="flex justify-between gap-4">
         <!-- Navbar samping -->
         <nav class="navbar-access hidden xl:flex flex-col w-[100px] bg-secondary text-white h-full fixed">
-          <a href="./index.html" class="home flex flex-col gap-2 justify-center items-center hover:text-blue-500  cursor-pointer p-4 ">
+          <a href="./index.html" class="home flex flex-col gap-2 justify-center items-center  hover:text-gray-700 cursor-pointer p-4 ">
             <i class="fa-solid fa-house text-2xl"></i>
             <p>Beranda</p>
           </a>
-          <a href="./TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer hover:text-blue-500">
+          <a href="./TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer hover:text-gray-700">
             <i class="fa-solid fa-credit-card text-2xl"></i>
             <p>Top Up</p>
           </a>
-          <a href="#" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer bg-blue-500">
+          <a href="#" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer bg-gray-700">
             <i class="fa-regular fa-circle-question text-2xl"></i>
             <p>Syarat dan Ketentuan</p>
           </a>
@@ -27,51 +27,52 @@
         <!-- Content -->
         <div class="content w-full xl:ml-[100px] bg-dark">
             <!-- Navbar search -->
-              <nav class="bg-primary px-7 xl:px-32">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center">
-                    <img src="../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
-                </a>
-                <div class="flex xl:order-2">
-                  <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="xl:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1" >
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            <nav class="bg-primary px-7 xl:px-32">
+              <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="#" class="flex items-center">
+                  <img src="../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
+              </a>
+              <div class="flex xl:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="xl:hidden text-white focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1" >
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                  </svg>
+                  <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden py-1 px-2 xl:px-4 xl:flex w-full xl:w-[720px] gap-2 items-center bg-gray-700 rounded text-xs xl:text-base">
+                  <i class="fa-solid fa-magnifying-glass text-white"></i>
+                  <input type="text" class="block w-full text-sm bg-transparent outline-none border-none focus:outline-none focus:ring-0 text-white" placeholder="Cari Game..">
+                  <button type="button" class="bg-gray-200 text-gray-800 px-3 rounded-md font-semibold">Cari</button>
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg xl:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
-                    <span class="sr-only">Search</span>
-                  </button>
-                  <div class="relative hidden py-1 px-2 xl:px-4 xl:flex w-full xl:w-[720px] gap-2 items-center bg-white rounded text-xs xl:text-base">
-                    <input type="text" class="block w-full text-sm outline-none border-none focus:outline-none focus:ring-0" placeholder="Cari Game..">
-                    <button type="button" class="bg-blue-500 text-white px-3 rounded-md">Cari</button>
+                </button>
+              </div>
+                <div class="z-50 absolute right-0 top-[70px] items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1 bg-[#252F45]" id="navbar-search">
+                  <div class="relative mt-3 mx-4 xl:hidden flex gap-4 bg-white outline-none border-white rounded-lg">
+                    <input type="text" class="block w-full text-sm bg-white outline-none border-white rounded focus:ring-0 border-none" placeholder="Cari Game...">
+                    <button type="button" class="bg-gray-700 text-white px-3 rounded-r">Cari</button>
                   </div>
-                  <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg xl:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-search" aria-expanded="false">
-                      <span class="sr-only">Open main menu</span>
-                      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                      </svg>
-                  </button>
-                </div>
-                  <div class="z-50 absolute right-0 top-[70px] items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1 bg-[#252F45]" id="navbar-search">
-                    <div class="relative mt-3 mx-4 xl:hidden flex gap-4 bg-white outline-none border-white rounded ">
-                      <input type="text" class="block w-full text-sm bg-white outline-none border-white rounded-l" placeholder="Cari Game...">
-                      <button type="button" class="bg-blue-500 text-white px-3 rounded-r">Cari</button>
-                    </div>
-                    <div class="flex flex-col p-4 xl:hidden mt-4 gap-8 font-medium text-white">
-                        <a href="./index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-blue-500 rounded" aria-current="page">
-                          <i class="fa-solid fa-house text-2xl"></i>
-                          <p>Beranda</p>
-                        </a>
-                        <a href="./TopUp.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-blue-500">
-                          <i class="fa-solid fa-credit-card text-2xl"></i>
-                          <p>top Up</p>
-                        </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-blue-500">
-                          <i class="fa-regular fa-circle-question text-2xl"></i>
-                          <p>Syarat dan Ketentuan</p>
-                        </a>
-                    </div>
+                  <div class="flex flex-col p-4 xl:hidden mt-4 gap-8 font-medium text-white">
+                      <a href="./index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-gray-700 rounded" aria-current="page">
+                        <i class="fa-solid fa-house text-2xl"></i>
+                        <p>Beranda</p>
+                      </a>
+                      <a href="./TopUp.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-gray-700">
+                        <i class="fa-solid fa-credit-card text-2xl"></i>
+                        <p>top Up</p>
+                      </a>
+                      <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded bg-gray-700">
+                        <i class="fa-regular fa-circle-question text-2xl"></i>
+                        <p>Syarat dan Ketentuan</p>
+                      </a>
                   </div>
                 </div>
-            </nav>
+              </div>
+          </nav>
             <!-- main content -->
             <main class="relative xl:pl-[105px] p-5 md:p-10 xl:pr-24 font-inter flex flex-col gap-12 text-white">
                 <h1 class="md:text-4xl text-3xl self-center font-semibold mt-16 text-center">Syarat dan Ketentuan</h1>
