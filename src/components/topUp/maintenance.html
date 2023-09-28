@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
-    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../../../dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Top Up</title>
 </head>
@@ -12,22 +12,22 @@
     <div class=" relative flex justify-between gap-4">
         <div class="alert fixed z-30 top-0 bg-opacity-30 left-0 flex justify-center items-center w-screen h-screen bg-slate-500 text-white">
             <div class="bg-secondary p-8 flex flex-col gap-2 font-medium md:w-[30%] rounded-xl relative border-2 border-green-500">
-                <h1 class="text-2xl">ID Pengguna Tidak Valid</h1>
-                <p class="text-gray-400">Silahkan masukkan id yang aktif</p>
-                <a href="./TopUp.html" class="self-end mt-6"><button class="btn rounded-lg py-2 px-4">OK</button></a>
+                <h1 class="text-2xl">Game sedang maintenance</h1>
+                <p class="text-gray-400">Silahkan pilih game lain</p>
+                <a href="../../TopUp.html" class="self-end mt-6"><button class="btn rounded-lg py-2 px-4">OK</button></a>
             </div>
         </div>
         <!-- Navbar samping -->
         <nav class="navbar-access hidden xl:flex flex-col w-[100px] bg-secondary text-white h-full fixed">
-            <a href="./index.html" class="home flex flex-col gap-2 justify-center items-center  hover:text-gray-700 cursor-pointer p-4 ">
+            <a href="../../index.html" class="home flex flex-col gap-2 justify-center items-center  hover:text-gray-700 cursor-pointer p-4 ">
               <i class="fa-solid fa-house text-2xl"></i>
               <p>Beranda</p>
             </a>
-            <a href="#" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-gray-700">
+            <a href="../../TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-gray-700">
               <i class="fa-solid fa-credit-card text-2xl"></i>
               <p>Top Up</p>
             </a>
-            <a href="./SyaratdanKetentuan.html" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-gray-700">
+            <a href="../../SyaratdanKetentuan.html" class="terms gap-2 flex flex-col justify-center items-center text-center p-4 cursor-pointer hover:text-gray-700">
               <i class="fa-regular fa-circle-question text-2xl"></i>
               <p>Syarat dan Ketentuan</p>
             </a>
@@ -37,7 +37,7 @@
             <!-- Navbar search -->
             <nav class="bg-primary px-7 xl:px-32">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center">
+                <a href="../../index.html" class="flex items-center">
                     <img src="../assets/images/logo.svg" class="h-8 mr-3" alt="RjStore Logo" />
                 </a>
                 <div class="flex xl:order-2">
@@ -65,15 +65,15 @@
                       <button type="button" class="bg-gray-700 text-white px-3 rounded-r">Cari</button>
                     </div>
                     <div class="flex flex-col p-4 xl:hidden mt-4 gap-8 font-medium text-white">
-                        <a href="./index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-gray-700 rounded" aria-current="page">
+                        <a href=../../index.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 text-white hover:text-gray-700 rounded" aria-current="page">
                           <i class="fa-solid fa-house text-2xl"></i>
                           <p>Beranda</p>
                         </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded  bg-gray-700">
+                        <a href="../../TopUp.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded  bg-gray-700">
                           <i class="fa-solid fa-credit-card text-2xl"></i>
                           <p>top Up</p>
                         </a>
-                        <a href="./SyaratdanKetentuan.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-gray-700">
+                        <a href="../../SyaratdanKetentuan.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded hover:text-gray-700">
                           <i class="fa-regular fa-circle-question text-2xl"></i>
                           <p>Syarat dan Ketentuan</p>
                         </a>
@@ -85,7 +85,7 @@
             <main class="relative xl:pl-[105px] p-5 md:p-10 xl:pr-24 font-inter flex flex-col gap-12 text-white overflow-hidden">
                 <div class="hero-topUp mt-7 h-fit">
                     <p class="breadcrumbs text-white font-semibold mb-8">
-                        <a href="./index.html" class="text-primary">Home</a>
+                        <a href="../../index.html" class="text-primary">Home</a>
                         / Mobile Legends
                     </p>
                     <div class="game font-medium relative flex flex-col items-center justify-center gap-4 py-5 px-5 xl:px-44 bg-[url('../assets/images/bg-topup.svg')] bg-cover">
@@ -706,17 +706,6 @@
                   </div>
                 </div>
               </div>
-              <!-- notification -->
-              <div class="hidden text-black absolute bottom-9 notification md:flex gap-4 bg-white p-2 rounded-lg items-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                <img src="../assets/images/ML.png" alt="" class="h-28">
-                <div class="customer font-medium flex flex-col gap-2">
-                  <p class="font-semibold">Safir Huda</p>
-                  <p>Membeli <span class="text-blue-600">100</span> Koin Mobile Legends</p>
-                  <p>Baru Saja</p>
-                </div>
-              </div>
-              <!-- Customer Service -->
-              <img src="../assets/images/cs_whatsapp 1.svg" alt="" class="hidden absolute bottom-9 right-3 md:block cursor-pointer" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
             </main>
             <!-- footer -->
             <footer class="font-inter md:font-poppins text-sm md:text-base footer bg-primary  flex flex-col text-white p-7 xl:px-28 md:px-10 gap-16 xl:gap-32  ">
@@ -744,9 +733,5 @@
         </div>
     </div>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
