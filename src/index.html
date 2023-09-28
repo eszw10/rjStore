@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- menggunakan script fontawesome untuk icon (perlu koneksi internet) -->
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
     <title>RJStore</title>
@@ -27,7 +26,20 @@
           </a>
         </nav>
         <!-- Content -->
-        <div class="content w-full xl:ml-[100px] bg-dark">
+        <div class="content w-full xl:ml-[100px] bg-dark overflow-hidden relative">
+            <div class="hidden md:flex absolute w-screen h-screen bg-transparent">
+              <!-- notification -->
+              <div id="notification" class="hidden z-50 fixed left-5 bottom-9 notification gap-4 bg-white p-2 rounded-lg items-center duration-150 ease-in">
+                <img src="../assets/images/ML.png" alt="" class="h-28">
+                <div class="customer font-medium flex flex-col gap-2">
+                  <p class="font-semibold">Safir Huda</p>
+                  <p>Membeli <span class="text-blue-600">100</span> Koin Mobile Legends</p>
+                  <p>Baru Saja</p>
+                </div>
+              </div>
+              <!-- Customer Service -->
+              <img src="../assets/images/cs_whatsapp 1.svg" alt="" class="z-50 hidden fixed bottom-9 right-3 md:block cursor-pointer animate-pulse" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+            </div>
             <!-- Navbar search -->
             <nav class="bg-primary px-7 xl:px-32">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -175,30 +187,53 @@
                 <div class="w-[90%] judul flex justify-between">
                   <h1 class="text-white">Trending Sekarang</h1>
                   <div class="arrow text-green-700 flex gap-4 cursor-pointer">
-                    <i class="fa-solid fa-arrow-left bg-white p-2 rounded-lg"></i>
-                    <i class="fa-solid fa-arrow-right bg-white p-2 rounded-lg"></i>
+                    <i id="prev-card" class="fa-solid fa-arrow-left bg-white p-2 rounded-lg"></i>
+                    <i id="next-card" class="fa-solid fa-arrow-right bg-white p-2 rounded-lg"></i>
                   </div>
                 </div>
-                <div class="card-container flex text-sm xl:text-xl gap-6 mt-4 md:mt-12 overflow-hidden">
-                  <div class="card xl:h-[300px] w-1/2 h-1/2 md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/ML.png" alt="" class="h-28 xl:h-32">
-                    <p>Mobile Legends</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="card xl:h-[300px] md:w-[292px] h-1/2 w-1/2 bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/FF.png" alt="" class="h-28 xl:h-32">
-                    <p>Free Fire</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="hidden card xl:h-[300px] md:w-[292px] h-1/2 w-1/2 bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/PUBG.png" alt="" class="h-28 xl:h-32">
-                    <p>PUBG Mobile</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
-                  </div>
-                  <div class="card hidden xl:h-[300px] md:w-[292px] h-1/2 w-1/2 bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
-                    <img src="../assets/images/COD.png" alt="" class="h-28 xl:h-32">
-                    <p>COD Mobile</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                <!-- card-slider -->
+                <div class="card-slider w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                  <div id="card-slider" class="card-container flex text-sm xl:text-xl gap-6 mt-4 md:mt-12 justify-start transition ease-out duration-700">
+                    <div class="card">
+                      <img src="../assets/images/ML.png" alt="" class="h-28 xl:h-32">
+                      <p>Mobile Legends</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/FF.png" alt="" class="h-28 xl:h-32">
+                      <p>Free Fire</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/PUBG.png" alt="" class="h-28 xl:h-32">
+                      <p>PUBG Mobile</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/COD.png" alt="" class="h-28 xl:h-32">
+                      <p>COD Mobile</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/Bleach.png" alt="" class="h-28 xl:h-32">
+                      <p>Bleach Mobile</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/Brawl.png" alt="" class="h-28 xl:h-32">
+                      <p>Brawl Stars</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/COC.png" alt="" class="h-28 xl:h-32">
+                      <p>Clash of Clans</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
+                    <div class="card">
+                      <img src="../assets/images/Arena Breakout.png" alt="" class="h-28 xl:h-32">
+                      <p>Arena Breakout</p>
+                      <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -211,70 +246,70 @@
                   <p class="nav-categories-item">Voucher Game</p>
                 </div>
                 <div class="card-categories-container text-center overflow-hidden md:mt-16 text-sm md:text-lg grid gap-6 grid-cols-2 md:items-center md:justify-center xl:grid-cols-4 md:gap-x-6 md:gap-y-12 m-auto">
-                  <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/aceRace.png" alt="" class="h-32">
                     <p>Ace Racer</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/apex.png" alt="" class="h-32">
                     <p>apex Legends Mobile</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="relative card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="relative category-card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
                     <div class="coming-soon absolute py-1 px-2 bg-pink-500 rounded-xl text-sm top-4 right-4">Coming Soon</div>
                     <img src="../assets/images/Arena Breakout.png" alt="" class="h-32">
                     <p>Arena Breakout</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="relative card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="relative category-card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
                     <div class="maintenance absolute py-1 px-2 bg-orange-500 rounded-xl text-sm top-4 right-4">Maintenance</div>
                     <img src="../assets/images/Arena Breakout.png" alt="" class="h-32">
                     <p>Arena Breakout </p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card md:h-[300px]  md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/Atlantica.png" alt="" class="h-32">
                     <p>Atlantica Rebirth</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="relative card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="relative category-card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
                     <div class="coming-soon absolute py-1 px-2 bg-pink-500 rounded-xl text-sm top-4 right-4">Coming Soon</div>
                     <img src="../assets/images/Bigo.png" alt="" class="h-32">
                     <p>Bigo Live</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="relative card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="relative category-card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
                     <div class="maintenance absolute py-1 px-2 bg-orange-500 rounded-xl text-sm top-4 right-4">Maintenance</div>
                     <img src="../assets/images/Bleach.png" alt="" class="h-32">
                     <p>Bleach Mobile 3D</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card hidden md:h-[300px] w-1/2 h-1/2 md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card hidden md:h-[300px] w-1/2 h-1/2 md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/Bleach.png" alt="" class="h-32">
                     <p>Bleach Mobile 3D</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/Brawl.png" alt="" class="h-32">
                     <p>Brawl Stars</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="relative card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="relative category-card md:h-[300px] md:w-[292px] bg-secondary flex flex-col items-center rounded-lg p-6 gap-2">
                     <div class="maintenance absolute py-1 px-2 bg-orange-500 rounded-xl text-sm top-4 right-4">Maintenance</div>
                     <img src="../assets/images/Chimerland.png" alt="" class="h-32">
                     <p>Chimerland</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/COC.png" alt="" class="h-32">
                     <p>Clash of Clans</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
-                  <div class="card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
+                  <div class="category-card hidden md:h-[300px] md:w-[292px] bg-secondary md:flex flex-col items-center rounded-lg p-6 gap-2">
                     <img src="../assets/images/COC.png" alt="" class="h-32">
                     <p>Clash of Clans</p>
-                    <button class="bg-primary py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
+                    <button class="btn py-2 px-4 rounded-lg self-stretch justify-self-end mt-8">Top Up</button>
                   </div>
                 </div>
               </div>
@@ -306,17 +341,6 @@
                   </div>
                 </div>
               </div>
-              <!-- notification -->
-              <div class="hidden absolute bottom-9 notification md:flex gap-4 bg-white p-2 rounded-lg items-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                <img src="../assets/images/ML.png" alt="" class="h-28">
-                <div class="customer font-medium flex flex-col gap-2">
-                  <p class="font-semibold">Safir Huda</p>
-                  <p>Membeli <span class="text-blue-600">100</span> Koin Mobile Legends</p>
-                  <p>Baru Saja</p>
-                </div>
-              </div>
-              <!-- Customer Service -->
-              <img src="../assets/images/cs_whatsapp 1.svg" alt="" class="hidden absolute bottom-9 right-3 md:block cursor-pointer" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
             </main>
             <!-- footer -->
             <footer class="font-inter md:font-poppins text-sm md:text-base footer bg-primary  flex flex-col text-white p-7 xl:px-28 md:px-10 gap-16 xl:gap-32  ">
@@ -344,10 +368,7 @@
         </div>
     </div>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 </body>
 </html>

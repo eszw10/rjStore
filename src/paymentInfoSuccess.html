@@ -15,7 +15,7 @@
               <i class="fa-solid fa-house text-2xl"></i>
               <p>Beranda</p>
             </a>
-            <a href="#" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-gray-700">
+            <a href="./TopUp.html" class="topUp gap-2 flex flex-col justify-center items-center p-4 cursor-pointer bg-gray-700">
               <i class="fa-solid fa-credit-card text-2xl"></i>
               <p>Top Up</p>
             </a>
@@ -61,7 +61,7 @@
                           <i class="fa-solid fa-house text-2xl"></i>
                           <p>Beranda</p>
                         </a>
-                        <a href="#" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded  bg-gray-700">
+                        <a href="./TopUp.html" class="flex flex-col gap-2 items-center py-2 pl-3 pr-4 rounded  bg-gray-700">
                           <i class="fa-solid fa-credit-card text-2xl"></i>
                           <p>top Up</p>
                         </a>
@@ -91,7 +91,10 @@
                             </div>
                             <div class="flex gap-3 md:gap-20 text-sm md:text-base">
                                 <p class="w-28 md:w-32">No Transaksi</p>         
-                                <p>:  #P3787824862486  <span class="text-green-500 cursor-pointer">Salin</span></p>
+                                <div class="flex items-center gap-1">
+                                    : <p id="noTransaksi" class="inline">#P3787824862486</p>
+                                    <button class="text-green-500 nav-categories-item hover:underline-offset-1 " onclick="copyText('noTransaksi')">Salin</button>
+                                </div> 
                             </div>
                             <div class="flex gap-3 md:gap-20 text-sm md:text-base">
                                 <p class="w-28 md:w-32">Waktu Transaksi</p>         
@@ -141,8 +144,11 @@
                                     </div>         
                                 </div>
                                 <div class="flex md:gap-20">
-                                    <p class="w-40">No Virtual Account</p>         
-                                    <p>: 9347697217223799</p>
+                                    <p class="w-40">No Virtual Account</p>
+                                    <div class="flex items-center gap-1">
+                                        : <p id="virtualAccount" class="inline">9347697217223799</p>
+                                        <button class="text-green-500 nav-categories-item hover:underline-offset-1 " onclick="copyText('virtualAccount')">Salin</button>
+                                    </div>             
                                 </div>
                                 <div class="flex md:gap-20">
                                     <p class="w-40">Total Transaksi</p>         
@@ -220,5 +226,6 @@
         </div>
     </div>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./script/payment.js"></script>
 </body>
 </html>

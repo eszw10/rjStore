@@ -14,6 +14,20 @@ body {
     margin: 0;
 }
 
+.fade-in {
+  animation: fadeIn ease-in;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 /* tailwind custom bundle style */
 @layer components {
     .nav-categories-item {
@@ -21,16 +35,18 @@ body {
     };
 
     .card-diamond {
-        @apply flex flex-col gap-2 items-center justify-center bg-white py-4 px-14 w-60 rounded-lg hover:bg-green-100 focus:bg-green-100 focus:ring-green-500 focus:ring-4 focus:border-green-500 cursor-pointer
+        @apply relative flex flex-col gap-2 items-center justify-center bg-white py-4 md:px-14 md:w-60 xl:w-48 w-40 rounded-lg hover:bg-green-100 focus:bg-green-100 focus:ring-green-500 focus:ring-4 focus:border-green-500 cursor-pointer
       };
 
     .payment-card {
-        @apply w-full p-6 flex items-center text-left gap-3 bg-white rounded-lg hover:bg-green-100 focus:bg-green-100 focus:ring-green-500 focus:ring-4 focus:border-green-500 cursor-pointer
+        @apply w-full text-xs md:text-sm p-3 md:p-6 flex items-center text-left gap-3 bg-white rounded-lg hover:bg-green-100 focus:bg-green-100 focus:ring-green-500 focus:ring-4 focus:border-green-500 cursor-pointer
     }
 
+    .card {
+      @apply xl:h-[300px] md:w-[292px] flex-shrink-0 relative w-1/2 h-1/2 bg-secondary flex flex-col items-center rounded-lg p-6 gap-2
+    }
 
-
-
-    
-  
-  }
+    .btn {
+      @apply bg-green-500 hover:bg-primary duration-150 ease-in
+    }
+}
